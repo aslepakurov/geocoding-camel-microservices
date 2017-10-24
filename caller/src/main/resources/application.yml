@@ -11,6 +11,6 @@ server:
 
 google:
   api:
-    key: "AIzaSyCj_H9t21QQHYjARWyn-cLKsABsCpemIgI"
+    key: ""
     format: "xml"
     basicUrl: "https://maps.googleapis.com/maps/api/geocode/${google.api.format}?address=%s&key=${google.api.key}"
