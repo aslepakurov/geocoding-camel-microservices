@@ -8,7 +8,10 @@
 5. Run modules `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > gateway.log 2>&1 &` and `java -jar caller/target/caller-0.1-SNAPSHOT.jar > caller.log 2>&1 &`
 6. Check service with
 
-   `curl -d '{"address":"maidan nezalegnosti 1 kyiv"}' -H "Content-Type: application/json" -X POST http://localhost:8000/callerAPI` and
+   `curl -d '{"address":"maidan nezalegnosti 1 kyiv"}' -H "Content-Type: application/json" -X POST http://localhost:8000/callerAPI` 
+   
+   and
+   
    `curl -d '{"address":"maidan nezalegnosti 1 kyiv"}' -H "Content-Type: application/json" -X POST http://localhost:8000/callerURL`
 
    You should get in both cases the following JSON:
