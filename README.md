@@ -32,4 +32,4 @@
    }
    ```
    
-_Sidenote:_ */callerAPI uses java lib to call Google API, whereas /callerURL uses plain url GET request (xml)*
+**Sidenote:** */callerAPI uses java lib to call Google API, whereas /callerURL uses plain url GET request (xml)*
