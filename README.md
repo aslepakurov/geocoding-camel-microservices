@@ -6,6 +6,7 @@
 3. Get into project directory `cd geocoding-camel-microservices`
 4. Build modules `mvn clean package spring-boot:repackage`
 5. Run modules 
+
 `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > gateway.log 2>&1 &` 
 
 and 
