@@ -1,0 +1,16 @@
+camel:
+  springboot:
+    main-run-controller: true
+
+logging:
+  level:
+    org.apache.camel: DEBUG
+
+server:
+  port: 8000
+
+google:
+  api:
+    key: "AIzaSyCj_H9t21QQHYjARWyn-cLKsABsCpemIgI"
+    format: "xml"
+    basicUrl: "https://maps.googleapis.com/maps/api/geocode/${google.api.format}?address=%s&key=${google.api.key}"
