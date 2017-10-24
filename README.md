@@ -33,4 +33,18 @@
    }
    ```
    
+### Application can also be run through Docker
+
+*Build with*
+
+```
+mvn clean package spring-boot:repackage dockerfile:build
+```
+
+*Run with*
+
+```
+docker run -p <hostPort>:<containerPost> -t springio/<moduleImage>
+```
+   
 **Sidenote:** */callerAPI uses java lib to call Google API, whereas /callerURL uses plain url GET request (xml)*
