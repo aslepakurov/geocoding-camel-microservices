@@ -5,7 +5,14 @@
 2. Install maven (check it with `mvn -v`)
 3. Get into project directory `cd geocoding-camel-microservices`
 4. Build modules `mvn clean package spring-boot:repackage`
-5. Run modules `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > gateway.log 2>&1 &` and `java -jar caller/target/caller-0.1-SNAPSHOT.jar > caller.log 2>&1 &`
+5. Run modules 
+
+   `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > logs/gateway.log 2>&1 &` 
+
+   and 
+
+   `java -jar caller/target/caller-0.1-SNAPSHOT.jar > logs/caller.log 2>&1 &`
+
 6. Check service with
 
    `curl -d '{"address":"maidan nezalegnosti 1 kyiv"}' -H "Content-Type: application/json" -X POST http://localhost:8000/callerAPI` 
@@ -25,4 +32,4 @@
    }
    ```
    
-_Sidenote:_*/callerAPI uses java lib to call Google API, whereas /callerURL uses plain url GET request (xml)*
+**Sidenote:** */callerAPI uses java lib to call Google API, whereas /callerURL uses plain url GET request (xml)*
