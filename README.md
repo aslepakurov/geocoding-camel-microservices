@@ -2,10 +2,11 @@
 [![Build Status](https://travis-ci.org/aslepakurov/geocoding-camel-microservices.svg?branch=master)](https://travis-ci.org/aslepakurov/geocoding-camel-microservices)
 
 1. Clone project `https://github.com/aslepakurov/geocoding-camel-microservices.git`
-2. Install maven (check it with `mvn -v`)
-3. Get into project directory `cd geocoding-camel-microservices`
-4. Build modules `mvn clean package spring-boot:repackage`
-5. Run modules 
+2. Put Google Geocoding API into file `caller/src/main/resources/applicarion.yml` key `google.api.key`
+3. Install maven (check it with `mvn -v`)
+4. Get into project directory `cd geocoding-camel-microservices`
+5. Build modules `mvn clean package spring-boot:repackage`
+6. Run modules 
 
    `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > logs/gateway.log 2>&1 &` 
 
@@ -13,7 +14,7 @@
 
    `java -jar caller/target/caller-0.1-SNAPSHOT.jar > logs/caller.log 2>&1 &`
 
-6. Check service with
+7. Check service with
 
    `curl -d '{"address":"maidan nezalegnosti 1 kyiv"}' -H "Content-Type: application/json" -X POST http://localhost:8000/callerAPI` 
    
