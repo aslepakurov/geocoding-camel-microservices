@@ -1,5 +1,5 @@
 # Spring Boot Camel Microservice integration
-
+[![Build Status](https://travis-ci.org/aslepakurov/geocoding-camel-microservices.svg?branch=master)](https://travis-ci.org/aslepakurov/geocoding-camel-microservices)
 
 1. Clone project `https://github.com/aslepakurov/geocoding-camel-microservices.git`
 2. Install maven (check it with `mvn -v`)
