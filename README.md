@@ -7,11 +7,11 @@
 4. Build modules `mvn clean package spring-boot:repackage`
 5. Run modules 
 
-   `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > gateway.log 2>&1 &` 
+   `java -jar gateway/target/gateway-0.1-SNAPSHOT.jar > logs/gateway.log 2>&1 &` 
 
    and 
 
-   `java -jar caller/target/caller-0.1-SNAPSHOT.jar > caller.log 2>&1 &`
+   `java -jar caller/target/caller-0.1-SNAPSHOT.jar > logs/caller.log 2>&1 &`
 
 6. Check service with
 
